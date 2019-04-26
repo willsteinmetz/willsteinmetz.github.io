@@ -1,0 +1,33 @@
+{
+  "name": "willsteinmetz.github.io",
+  "version": "2019.4.0",
+  "description": "Will Steinmetz's website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willsteinmetz/willsteinmetz.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "github"
+  ],
+  "author": "Will Steinmetz",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/willsteinmetz/willsteinmetz.github.io/issues"
+  },
+  "homepage": "https://github.com/willsteinmetz/willsteinmetz.github.io#readme",
+  "private": true,
+  "dependencies": {
+    "@vaadin/router": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "ezwc-cli": "^0.11.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
+}
