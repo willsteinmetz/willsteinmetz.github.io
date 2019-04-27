@@ -1,3 +1,4 @@
 module.exports = {
-  in: './src'
+  in: './src',
+  watch: true
 };

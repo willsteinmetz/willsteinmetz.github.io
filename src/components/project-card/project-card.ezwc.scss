@@ -1,0 +1,36 @@
+@import '../../../node_modules/keroseen-ui/src/components/variables';
+@import '../../../node_modules/keroseen-ui/src/components/utilities';
+@import '../../../node_modules/keroseen-ui/src/components/resets';
+@import '../../../node_modules/keroseen-ui/src/components/cards';
+
+@include keroseen-resets();
+
+:host {
+  display: block;
+}
+
+.ws-card {
+  @include keroseen-card();
+
+  .ws-card-content {
+    @include keroseen-card-content();
+    padding-bottom: 0;
+  }
+
+  .ws-card-title {
+    @include keroseen-card-title();
+  }
+
+  .ws-card-actions {
+    @include keroseen-card-actions();
+
+    .ws-card-action-item {
+      @include keroseen-card-action-item();
+
+      &:hover,
+      &:focus {
+        background-color: rgba(red, .1);
+      }
+    }
+  }
+}

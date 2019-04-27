@@ -1,13 +1,53 @@
 <template>
   <h1>Projects</h1>
+  <p>
+    Below is a list of some projects I have worked on and contributions to open source projects.
+    I also have some other projects available on my
+    <a href="http://github.com/willsteinmetz" target="_blank" rel="noopener">GitHub</a>
+    page.
+  </p>
+  <h2>Active Projects</h2>
+
+  <div class="ws-grid grid-12">
+    <div class="row">
+      <ws-project-card
+        project-title="Notific8"
+        project-link="http://github.com/willsteinmetz/notific8/"
+        class="col-xs-12 col-md-4">
+        <p>
+          Notific8 is an on-page notification JavaScript library.
+          It has built in themes which come with a set of built in colors for each and is designed to be easy to create new themes and colors.
+          The library was born from a want for a simply designed yet modern and stylish notification system that was easily customizable and easy to use.
+        </p>
+      </ws-project-card>
+
+      <ws-project-card
+        project-title="EZWC"
+        project-link="http://github.com/pynklynn/ezwc/"
+        class="col-xs-12 col-md-4">
+        <p>
+          EZWC is a CLI tool allowing developers to create native web components in a format similar to
+          <a href="https://vuejs.org/v2/guide/single-file-components.html" target="_blank" rel="noopener">Vue single-file</a>
+          components.
+          It supports some style preprocessors, template engines, and Typescript.
+          If you're looking for code examples,
+          <a href="https://github.com/willsteinmetz/willsteinmetz.github.io" target="_blank" rel="noopener">this site</a>
+          was built with EZWC!
+        </p>
+      </ws-project-card>
+    </div>
+  </div>
+
+  <h2>Contributions</h2>
+  <h2>Inactive Projects</h2>
 </template>
 
 <script selector="ws-projects">
-class Projects extends HTMLElement {
+class WsProjects extends HTMLElement {
   constructor() {
     super();
   }
 }
 </script>
 
-<style></style>
+<style lang="scss" src="./projects.ezwc.scss"></style>

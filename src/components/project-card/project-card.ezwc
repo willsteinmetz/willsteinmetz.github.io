@@ -1,0 +1,48 @@
+<template>
+  <article class="ws-card">
+    <header class="ws-card-title"></header>
+    <div class="ws-card-content">
+      <slot></slot>
+    </div>
+    <footer class="ws-card-actions">
+      <a target="_blank" rel="noopener" class="ws-card-action-item project-link">GitHub Page</a>
+    </footer>
+  </article>
+</template>
+
+<script selector="ws-project-card">
+class ProjectCard extends HTMLElement {
+  constructor() {
+    super();
+    this._projectTitle = this.shadowRoot.querySelector('.ws-card-title');
+    this._projectLink = this.shadowRoot.querySelector('.ws-card-action-item.project-link');
+  }
+
+  connectedCallback() {
+    this._projectLink.setAttribute('href', this.projectLink);
+    this._projectTitle.innerHTML = this.projectTitle;
+  }
+
+  static get observedAttributes() {
+    return [ 'project-title', 'project-link' ];
+  }
+
+  get projectTitle() {
+    return this.getAttribute('project-title');
+  }
+
+  set projectTitle(newValue) {
+    this.setAttribute('project-title', newValue);
+  }
+
+  get projectLink() {
+    return this.getAttribute('project-link');
+  }
+
+  set projectLink(newValue) {
+    this.setAttribute('project-link', newValue);
+  }
+}
+</script>
+
+<style lang="scss" src="./project-card.ezwc.scss"></style>
