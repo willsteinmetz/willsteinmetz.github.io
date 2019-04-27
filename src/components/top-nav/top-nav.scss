@@ -31,6 +31,7 @@
 
   .ws-top-nav-container {
     background-color: white;
+    z-index: 950;
 
     @include keroseen-top-nav-container();
 
@@ -47,6 +48,8 @@
     @include keroseen-top-nav-identifier();
 
     margin-top: keroseen-px-to-rem(3px);
+    position: reltiave;
+    z-index: 1000;
 
     @media (min-width: $keroseen-screen-sm) {
       margin-top: 0;
