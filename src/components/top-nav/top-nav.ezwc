@@ -34,4 +34,4 @@ class TopNav extends HTMLElement {
 }
 </script>
 
-<style lang="scss" src="./top-nav.scss"></style>
+<style lang="scss" src="./top-nav.ezwc.scss"></style>
