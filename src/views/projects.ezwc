@@ -6,8 +6,8 @@
     <a href="http://github.com/willsteinmetz" target="_blank" rel="noopener">GitHub</a>
     page.
   </p>
-  <h2>Active Projects</h2>
 
+  <h2>Active Projects</h2>
   <div class="ws-grid grid-12">
     <div class="row">
       <ws-project-card
@@ -20,7 +20,6 @@
           The library was born from a want for a simply designed yet modern and stylish notification system that was easily customizable and easy to use.
         </p>
       </ws-project-card>
-
       <ws-project-card
         project-title="EZWC"
         project-link="http://github.com/pynklynn/ezwc/"
@@ -39,7 +38,70 @@
   </div>
 
   <h2>Contributions</h2>
+  <div class="ws-grid grid-12">
+    <div class="row">
+      <ws-project-card
+        project-title="Yeoman Express Generator"
+        project-link="https://github.com/poppinlp/grunt-htmlhint-plus"
+        class="col-xs-12 col-md-4">
+        <p>
+          An Expressjs generator for
+          <a href="http://yeoman.io/" target="_blank" rel="noopener">Yeoman</a>,
+          based on the express command line tool.
+        </p>
+        <p>
+          I contributed several pull requests to remove Ruby Sass, remove Bower, and update from Jade to Pug templating.
+        </p>
+      </ws-project-card>
+      <ws-project-card
+        project-title="grunt-htmlhint-plus"
+        project-link="https://github.com/poppinlp/grunt-htmlhint-plus"
+        class="col-xs-12 col-md-4">
+        <p>
+          grunt-htmlhint-plus is a configurable
+          <a href="http://gruntjs.com/" target="_blank" rel="noopener">Grunt</a>
+          task that makes use of the
+          <a href="http://htmlhint.com/" target="_blank" rel="noopener">htmlhint</a>
+          Node module used for hinting HTML code based on a given set of rules.
+        </p>
+        <p>
+          I contributed several pull requests to the project to provide new functionality both that I requested and other developers requested as well.
+        </p>
+      </ws-project-card>
+    </div>
+  </div>
+
   <h2>Inactive Projects</h2>
+  <div class="ws-grid grid-12">
+    <div class="row">
+      <ws-project-card
+        project-title="Keroseen UI"
+        project-link="http://github.com/willsteinmetz/keroseen-ui"
+        class="col-xs-12 col-md-4">
+        <p>
+          Keroseen is a set of minimally designed Sass mixins (Scss format) to be used for generating styles for a web project.
+          The goal is to import the parts of the library you want to use and make use of the appropriate mixins in your styles.
+          A major design goal of the library is to include the base styles directly in the developer defined styles instead of piling on override selectors.
+        </p>
+      </ws-project-card>
+      <ws-project-card
+        project-title="express-respondto"
+        project-link="https://github.com/willsteinmetz/express-respondto"
+        class="col-xs-12 col-md-4">
+        <p>
+          grunt-htmlhint-plus is a configurable
+          <a href="http://gruntjs.com/" target="_blank" rel="noopener">Grunt</a>
+          task that makes use of the
+          <a href="http://htmlhint.com/" target="_blank" rel="noopener">htmlhint</a>
+          Node module used for hinting HTML code based on a given set of rules.
+        </p>
+        <p>
+          express-respondto is an NPM module that provides middleware for Express to add basic functionality similar to the responds_to method in Ruby on Rails.
+          The demo below will load this page with the .json extension and return a JSON object.
+        </p>
+      </ws-project-card>
+    </div>
+  </div>
 </template>
 
 <script selector="ws-projects">
