@@ -4,6 +4,8 @@
   "description": "Will Steinmetz's website",
   "main": "index.html",
   "scripts": {
+    "start": "serve",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,11 +24,17 @@
   "homepage": "https://github.com/willsteinmetz/willsteinmetz.github.io#readme",
   "private": true,
   "dependencies": {
-    "@vaadin/router": "^1.2.0"
+    "@vaadin/router": "^1.2.0",
+    "@webcomponents/webcomponentsjs": "^2.2.10"
   },
   "devDependencies": {
+    "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
-    "ezwc-cli": "^0.11.0",
+    "keroseen-ui": "^0.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "serve": "^11.0.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1"
   }

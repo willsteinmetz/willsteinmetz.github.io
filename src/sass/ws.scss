@@ -1,0 +1,14 @@
+@import 'node_modules/keroseen-ui/src/components/variables';
+@import 'node_modules/keroseen-ui/src/components/utilities';
+// @import 'node_modules/keroseen-ui/src/components/visibility';
+@import 'node_modules/keroseen-ui/src/components/resets';
+@import 'node_modules/keroseen-ui/src/components/shared-nav';
+
+@import 'node_modules/keroseen-ui/src/components/top-nav';
+
+@include keroseen-resets();
+
+body {
+  @include has-keroseen-top-nav();
+  font-family: 'Comfortaa', Helvetica, Verdana, Arial, sans-serif;
+}

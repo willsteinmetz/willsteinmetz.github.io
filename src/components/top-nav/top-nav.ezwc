@@ -1,0 +1,37 @@
+<template>
+  <header class="ws-top-nav">
+    <span class="ws-top-nav-menu-button">&#8942;</span>
+    <span class="ws-top-nav-identifier">Will Steinmetz</span>
+    <section class="ws-top-nav-container">
+      <nav class="ws-top-nav-main">
+        <a href="./" class="ws-nav-link">Home</a>
+        <a href="./projects" class="ws-nav-link">Projects</a>
+        <a href="https://medium.com/@willsteinmetz86" target="_blank" rel="noopener" class="ws-nav-link">Blog</a>
+      </nav>
+    </section>
+  </header>
+</template>
+
+<script selector="ws-top-nav">
+class TopNav extends HTMLElement {
+  constructor() {
+    super();
+
+    this._topNavButton = this.shadowRoot.querySelector('.ws-top-nav-menu-button');
+  }
+
+  connectedCallback() {
+    this._topNavButton.addEventListener('click', this._toggleMobileNav);
+  }
+
+  disconnectedCallback() {
+    this._topNavButton.removeEventListener('click', this._toggleMobileNav);
+  }
+
+  _toggleMobileNav(event) {
+    event.target.parentNode.classList.toggle('open');
+  }
+}
+</script>
+
+<style lang="scss" src="./top-nav.scss"></style>

@@ -1,0 +1,60 @@
+@import '../../../node_modules/keroseen-ui/src/components/variables';
+@import '../../../node_modules/keroseen-ui/src/components/utilities';
+@import '../../../node_modules/keroseen-ui/src/components/resets';
+@import '../../../node_modules/keroseen-ui/src/components/shared-nav';
+@import '../../../node_modules/keroseen-ui/src/components/top-nav';
+
+@include keroseen-resets();
+
+:host {
+  display: block;
+}
+
+.ws-top-nav {
+  @include keroseen-top-nav();
+  background-color: #fff;
+  z-index: 900;
+
+  @include keroseen-top-nav-fixed();
+
+  &.open {
+    .ws-top-nav-container {
+      @include keroseen-top-nav-mobile-open();
+    }
+  }
+
+  .ws-top-nav-menu-button {
+    @include keroseen-nav-mobile-menu();
+
+    z-index: 1000;
+  }
+
+  .ws-top-nav-container {
+    background-color: white;
+
+    @include keroseen-top-nav-container();
+
+    @media (max-width: $keroseen-screen-xs) {
+      padding-top: keroseen-px-to-rem(50px)
+    }
+
+    .ws-top-nav-main {
+      @include keroseen-top-nav-main();
+    }
+  }
+
+  .ws-top-nav-identifier {
+    @include keroseen-top-nav-identifier();
+
+    margin-top: keroseen-px-to-rem(3px);
+
+    @media (min-width: $keroseen-screen-sm) {
+      margin-top: 0;
+    }
+  }
+
+  .ws-nav-link {
+    @include keroseen-top-nav-link();
+    @include keroseen-top-nav-first-link();
+  }
+}
