@@ -50,9 +50,18 @@
   .ws-top-nav-identifier {
     @include keroseen-top-nav-identifier();
 
-    margin-top: keroseen-px-to-rem(3px);
+    display: inline-flex;
     position: reltiave;
     z-index: 1000;
+  }
+
+  .ws-top-nav-identifier-image {
+    margin: keroseen-px-to-rem(-5px) keroseen-px-to-rem(5px) 0 keroseen-px-to-rem(-5px);
+    height: keroseen-px-to-rem(40px);
+
+    @media screen and (min-width: $keroseen-screen-sm) {
+      height: keroseen-px-to-rem(50px);
+    }
   }
 
   .ws-nav-link {

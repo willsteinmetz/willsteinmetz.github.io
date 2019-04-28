@@ -1,36 +1,47 @@
 <template>
   <h1>Hi, I'm Will!</h1>
-  <p>
-    Hi there, I'm Will Steinmetz.
-    I'm a software engineer that focuses on experience development (front-end web and mid-tier Node development) from North Carolina.
-    Solving problems with web-based software is one of my favorite things to do.
-    Along with programming, my hobbies include reading, writing, board games, video games, and indoor rock climbing.
-  </p>
-  <p>
-    When I get time, I enjoy working on personal projects including some open source projects.
-    Some of my most active projects on GitHub are:
-  </p>
-  <ul>
-    <li>
-      <a href="https://github.com/willsteinmetz/notific8" target="_blank" rel="noopener">Notific8</a>
-      - A JavaScript project to easily create notifications on a webpage that are themeable and support promises
-    </li>
-    <li>
-      <a href="https://github.com/pynklynn/ezwc" target="_blank" rel="noopener">EZWC</a>
-      - A CLI tool and file format that allows developers to write a web component in a format similar to
-      <a href="https://vuejs.org/v2/guide/single-file-components.html" target="_blank" rel="noopener">Vue single-file components</a>
-      that are then transpiled to native web components
-    </li>
-  </ul>
-  <p>
-    Being a web developer, I get the opportunity to use many technologies, frameworks, and libraries.
-    In addition to JavaScript, Typescript, and Node, I regularly actively work on projects using
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue</a>,
-    <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>,
-    and
-    <a href="https://www.webcomponents.org/" target="_blank" rel="noopener">Native Web Components</a>.
-    I'm always up for learning something new which is easy to do in my field because it moves at a fast pace.
-  </p>
+  <section class="ws-home-content">
+    <div class="ws-home-content-left">
+      <img src="./public/images/final-will-graphic.svg" alt="Will and his cat Phoebe" />
+    </div>
+    <div class="ws-home-content-right">
+      <p>
+        Hi there, I'm Will Steinmetz.
+        I'm a software engineer that focuses on experience development (front-end web and mid-tier Node development) from North Carolina.
+        Solving problems with web-based software is one of my favorite things to do.
+        Along with programming, my hobbies include reading, writing, board games, video games, and indoor rock climbing.
+      </p>
+      <p>
+        When I get time, I enjoy working on personal projects including some open source projects.
+        Some of my most active projects on GitHub are:
+      </p>
+      <ul>
+        <li>
+          <a href="https://github.com/willsteinmetz/notific8" target="_blank" rel="noopener">Notific8</a>
+          - A JavaScript project to easily create notifications on a webpage that are themeable and support promises
+        </li>
+        <li>
+          <a href="https://github.com/pynklynn/ezwc" target="_blank" rel="noopener">EZWC</a>
+          - A CLI tool and file format that allows developers to write a web component in a format similar to
+          <a href="https://vuejs.org/v2/guide/single-file-components.html" target="_blank" rel="noopener">Vue single-file components</a>
+          that are then transpiled to native web components
+        </li>
+      </ul>
+      <p>
+        Being a web developer, I get the opportunity to use many technologies, frameworks, and libraries.
+        In addition to JavaScript, Typescript, and Node, I regularly actively work on projects using
+        <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue</a>,
+        <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>,
+        and
+        <a href="https://www.webcomponents.org/" target="_blank" rel="noopener">Native Web Components</a>.
+        I'm always up for learning something new which is easy to do in my field because it moves at a fast pace.
+      </p>
+      <p class="no-mobile">
+        The awesome graphic to the left was drawn for me by the lovely and very talented
+        <a href="http://emilymaschauer.crevado.com/" target="_blank" rel="noopener">Emily Maschauer</a>.
+      </p>
+    </div>
+  </section>
 </template>
 
 <script selector="ws-home">
@@ -43,4 +54,30 @@ class WsHome extends HTMLElement {
 
 <style lang="scss">
 @import '../sass/_component-base.scss';
+@import '../../node_modules/keroseen-ui/src/components/_variables.scss';
+
+.ws-home-content-left,
+.no-mobile {
+  display: none;
+}
+
+@media screen and (min-width: $keroseen-screen-sm) {
+  .ws-home-content {
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .ws-home-content-left {
+    display: block;
+    flex-basis: 25%;
+  }
+
+  .ws-home-content-right {
+    flex-basis: 75%;
+  }
+
+  .no-mobile {
+    display: block;
+  }
+}
 </style>

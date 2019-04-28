@@ -1,7 +1,10 @@
 <template>
   <header class="ws-top-nav">
     <span class="ws-top-nav-menu-button">&#8942;</span>
-    <span class="ws-top-nav-identifier">Will Steinmetz</span>
+    <span class="ws-top-nav-identifier">
+      <img src="./public/images/final-will-graphic-head.svg" aria-hidden="true" class="ws-top-nav-identifier-image">
+      Will Steinmetz
+    </span>
     <section class="ws-top-nav-container">
       <nav class="ws-top-nav-main">
         <a href="./" class="ws-nav-link">Home</a>
