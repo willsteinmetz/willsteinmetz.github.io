@@ -3,6 +3,8 @@
 @import '../../../node_modules/keroseen-ui/src/components/resets';
 @import '../../../node_modules/keroseen-ui/src/components/cards';
 
+@import '../../sass/colors';
+
 @include keroseen-resets();
 
 :host {
@@ -23,13 +25,17 @@
 
   .ws-card-actions {
     @include keroseen-card-actions();
+    background-color: $default-white;
+    margin: 0 -1.5rem -.5rem;
+    padding: .5rem 1.5rem;
 
     .ws-card-action-item {
       @include keroseen-card-action-item();
+      color: $ws-brand-color;
 
       &:hover,
       &:focus {
-        background-color: rgba(red, .1);
+        background-color: rgba($ws-brand-color, .2);
       }
     }
   }

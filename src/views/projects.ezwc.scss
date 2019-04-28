@@ -4,11 +4,10 @@
 
 @import '../../node_modules/keroseen-ui/src/components/grid';
 
-@include keroseen-resets();
+@import '../sass/colors';
+@import '../sass/component-base';
 
-:host {
-  display: block;
-}
+@include keroseen-resets();
 
 .ws-grid {
   @include keroseen-grid();

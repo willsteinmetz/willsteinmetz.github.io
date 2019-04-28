@@ -1,0 +1,14 @@
+$ws-brand-color: #a10;
+$ws-brand-color-lighten-1: lighten($ws-brand-color, 5%);
+$ws-brand-color-lighten-2: lighten($ws-brand-color, 10%);
+$ws-brand-color-lighten-3: lighten($ws-brand-color, 15%);
+$ws-brand-color-lighten-4: lighten($ws-brand-color, 20%);
+$ws-brand-color-lighten-5: lighten($ws-brand-color, 25%);
+$ws-brand-color-darken-1: darken($ws-brand-color, 5%);
+$ws-brand-color-darken-2: darken($ws-brand-color, 10%);
+$ws-brand-color-darken-3: darken($ws-brand-color, 15%);
+$ws-brand-color-darken-4: darken($ws-brand-color, 20%);
+$ws-brand-color-darken-5: darken($ws-brand-color, 25%);
+$default-white: #fff;
+$text-color: darken($default-white, 5%);
+$page-background: #787878;

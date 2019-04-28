@@ -41,8 +41,6 @@ class WsHome extends HTMLElement {
 }
 </script>
 
-<style>
-:host {
-  display: block;
-}
+<style lang="scss">
+@import '../sass/_component-base.scss';
 </style>

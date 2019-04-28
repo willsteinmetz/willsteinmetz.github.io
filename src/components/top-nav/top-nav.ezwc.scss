@@ -4,6 +4,8 @@
 @import '../../../node_modules/keroseen-ui/src/components/shared-nav';
 @import '../../../node_modules/keroseen-ui/src/components/top-nav';
 
+@import '../../sass/colors';
+
 @include keroseen-resets();
 
 :host {
@@ -12,7 +14,8 @@
 
 .ws-top-nav {
   @include keroseen-top-nav();
-  background-color: #fff;
+  background-color: $ws-brand-color;
+  color: $default-white;
   z-index: 900;
 
   @include keroseen-top-nav-fixed();
@@ -30,7 +33,7 @@
   }
 
   .ws-top-nav-container {
-    background-color: white;
+    background-color: $ws-brand-color;
     z-index: 950;
 
     @include keroseen-top-nav-container();
@@ -50,14 +53,18 @@
     margin-top: keroseen-px-to-rem(3px);
     position: reltiave;
     z-index: 1000;
-
-    @media (min-width: $keroseen-screen-sm) {
-      margin-top: 0;
-    }
   }
 
   .ws-nav-link {
     @include keroseen-top-nav-link();
     @include keroseen-top-nav-first-link();
+    color: $default-white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: darken($default-white, 5%);
+      text-decoration: underline;
+    }
   }
 }
