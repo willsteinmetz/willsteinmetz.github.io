@@ -13,7 +13,7 @@
       <ws-project-card
         project-title="Notific8"
         project-link="http://github.com/willsteinmetz/notific8/"
-        class="col-xs-12 col-md-4">
+        class="col-xs-12 col-md-4 ws-brand-color-lighten-1">
         <p>
           Notific8 is an on-page notification JavaScript library.
           It has built in themes which come with a set of built in colors for each and is designed to be easy to create new themes and colors.
@@ -23,7 +23,7 @@
       <ws-project-card
         project-title="EZWC"
         project-link="http://github.com/pynklynn/ezwc/"
-        class="col-xs-12 col-md-4">
+        class="col-xs-12 col-md-4 ws-brand-color-darken-1">
         <p>
           EZWC is a CLI tool allowing developers to create native web components in a format similar to
           <a href="https://vuejs.org/v2/guide/single-file-components.html" target="_blank" rel="noopener">Vue single-file</a>
@@ -43,7 +43,7 @@
       <ws-project-card
         project-title="Yeoman Express Generator"
         project-link="https://github.com/poppinlp/grunt-htmlhint-plus"
-        class="col-xs-12 col-md-4">
+        class="col-xs-12 col-md-4 ws-brand-color-darken-2">
         <p>
           An Expressjs generator for
           <a href="http://yeoman.io/" target="_blank" rel="noopener">Yeoman</a>,
@@ -56,7 +56,7 @@
       <ws-project-card
         project-title="grunt-htmlhint-plus"
         project-link="https://github.com/poppinlp/grunt-htmlhint-plus"
-        class="col-xs-12 col-md-4">
+        class="col-xs-12 col-md-4 ws-brand-color-lighten-2">
         <p>
           grunt-htmlhint-plus is a configurable
           <a href="http://gruntjs.com/" target="_blank" rel="noopener">Grunt</a>
@@ -77,7 +77,7 @@
       <ws-project-card
         project-title="Keroseen UI"
         project-link="http://github.com/willsteinmetz/keroseen-ui"
-        class="col-xs-12 col-md-4">
+        class="col-xs-12 col-md-4 ws-brand-color-lighten-3">
         <p>
           Keroseen is a set of minimally designed Sass mixins (Scss format) to be used for generating styles for a web project.
           The goal is to import the parts of the library you want to use and make use of the appropriate mixins in your styles.
@@ -87,7 +87,7 @@
       <ws-project-card
         project-title="express-respondto"
         project-link="https://github.com/willsteinmetz/express-respondto"
-        class="col-xs-12 col-md-4">
+        class="col-xs-12 col-md-4 ws-brand-color-darken-3">
         <p>
           grunt-htmlhint-plus is a configurable
           <a href="http://gruntjs.com/" target="_blank" rel="noopener">Grunt</a>

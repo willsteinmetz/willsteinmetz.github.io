@@ -11,6 +11,34 @@
   display: block;
 }
 
+:host(.ws-brand-color) .ws-card {
+  background-color: $ws-brand-color;
+}
+
+:host(.ws-brand-color-lighten-1) .ws-card {
+  background-color: $ws-brand-color-lighten-1;
+}
+
+:host(.ws-brand-color-lighten-2) .ws-card {
+  background-color: $ws-brand-color-lighten-2;
+}
+
+:host(.ws-brand-color-lighten-3) .ws-card {
+  background-color: $ws-brand-color-lighten-3;
+}
+
+:host(.ws-brand-color-darken-1) .ws-card {
+  background-color: $ws-brand-color-darken-1;
+}
+
+:host(.ws-brand-color-darken-2) .ws-card {
+  background-color: $ws-brand-color-darken-2;
+}
+
+:host(.ws-brand-color-darken-3) .ws-card {
+  background-color: $ws-brand-color-darken-3;
+}
+
 .ws-card {
   @include keroseen-card();
 

@@ -12,3 +12,11 @@
 .ws-grid {
   @include keroseen-grid();
 }
+
+ws-project-card {
+  a:link,
+  a:active,
+  a:visited {
+    color: $default-white;
+  }
+}
