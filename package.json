@@ -1,6 +1,6 @@
 {
   "name": "willsteinmetz.github.io",
-  "version": "2019.4.0",
+  "version": "2019.5.0",
   "description": "Will Steinmetz's website",
   "main": "index.html",
   "scripts": {
@@ -30,6 +30,7 @@
   "devDependencies": {
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
+    "ezwc-loader": "^0.1.0",
     "keroseen-ui": "^0.2.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",

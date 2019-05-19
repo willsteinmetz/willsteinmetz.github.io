@@ -1,2 +1,2 @@
-import './components/top-nav/top-nav';
-import './components/project-card/project-card';
+import './components/top-nav/top-nav.ezwc';
+import './components/project-card/project-card.ezwc';

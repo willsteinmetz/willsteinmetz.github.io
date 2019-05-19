@@ -63,3 +63,4 @@ typings/
 # build files
 src/views/**/*.js
 src/components/**/*.js
+.ezwc-tmp
