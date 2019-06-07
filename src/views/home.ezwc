@@ -54,6 +54,7 @@ class WsHome extends HTMLElement {
 
 <style lang="scss">
 @import '../../node_modules/keroseen-ui/src/components/_variables.scss';
+@import '../sass/component-base';
 
 ws-home {
   display: block;

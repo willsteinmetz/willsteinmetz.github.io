@@ -24,14 +24,16 @@ class TopNav extends HTMLElement {
   connectedCallback() {
     this._topNavButton = this.shadowRoot.querySelector('.ws-top-nav-menu-button');
     this._topNavButton.addEventListener('click', this._toggleMobileNav);
+    this.shadowRoot.querySelectorAll('.ws-nav-link').forEach(link => link.addEventListener('click', this._toggleMobileNav));
   }
 
   disconnectedCallback() {
     this._topNavButton.removeEventListener('click', this._toggleMobileNav);
+    this.shadowRoot.querySelectorAll('.ws-nav-link').forEach(link => link.removeEventListener('click', this._toggleMobileNav));
   }
 
   _toggleMobileNav(event) {
-    event.target.parentNode.classList.toggle('open');
+    event.target.closest('.ws-top-nav').classList.toggle('open');
   }
 }
 </script>

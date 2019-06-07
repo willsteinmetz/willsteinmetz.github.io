@@ -1,17 +1,13 @@
 @import '../sass/colors';
 
-:host {
-  display: block;
-}
-
 a:link,
 a:visited,
 a:active {
-  color: $ws-brand-color-darken-1;
+  color: get-color('tomato', 'darken', 1);
   font-weight: bold;
 }
 
 a:hover,
 a:focus {
-  color: $ws-brand-color-darken-3;
+  color: get-color('tomato', 'darken', 3);
 }

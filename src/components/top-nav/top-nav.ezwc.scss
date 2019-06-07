@@ -14,8 +14,8 @@
 
 .ws-top-nav {
   @include keroseen-top-nav();
-  background-color: $ws-brand-color;
-  color: $default-white;
+  background-color: get-color('tomato');
+  color: get-color('white');
   z-index: 900;
 
   @include keroseen-top-nav-fixed();
@@ -33,7 +33,7 @@
   }
 
   .ws-top-nav-container {
-    background-color: $ws-brand-color;
+    background-color: get-color('tomato');
     z-index: 950;
 
     @include keroseen-top-nav-container();
@@ -67,12 +67,12 @@
   .ws-nav-link {
     @include keroseen-top-nav-link();
     @include keroseen-top-nav-first-link();
-    color: $default-white;
+    color: get-color('white');
     text-decoration: none;
 
     &:hover,
     &:focus {
-      color: darken($default-white, 5%);
+      color: darken(get-color('white'), 5%);
       text-decoration: underline;
     }
   }

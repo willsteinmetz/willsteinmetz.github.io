@@ -11,36 +11,16 @@
   display: block;
 }
 
-:host(.ws-brand-color) .ws-card {
-  background-color: $ws-brand-color;
-}
+$colors: 'pynk', 'cottoncandy', 'twilight', 'chartreuse', 'carrot', 'tomato', 'maroon', 'teal', 'cream', 'parrot';
 
-:host(.ws-brand-color-lighten-1) .ws-card {
-  background-color: $ws-brand-color-lighten-1;
+@each $color in $colors{
+  :host(.#{$color}) .ws-card {
+    background-color: get-color($color);
+  }
 }
-
-:host(.ws-brand-color-lighten-2) .ws-card {
-  background-color: $ws-brand-color-lighten-2;
-}
-
-:host(.ws-brand-color-lighten-3) .ws-card {
-  background-color: $ws-brand-color-lighten-3;
-}
-
-:host(.ws-brand-color-darken-1) .ws-card {
-  background-color: $ws-brand-color-darken-1;
-}
-
-:host(.ws-brand-color-darken-2) .ws-card {
-  background-color: $ws-brand-color-darken-2;
-}
-
-:host(.ws-brand-color-darken-3) .ws-card {
-  background-color: $ws-brand-color-darken-3;
-}
-
 .ws-card {
   @include keroseen-card();
+  color: get-color('white');
 
   .ws-card-content {
     @include keroseen-card-content();
@@ -53,17 +33,17 @@
 
   .ws-card-actions {
     @include keroseen-card-actions();
-    background-color: $default-white;
+    background-color: get-color('white');
     margin: 0 -1.5rem -.5rem;
     padding: .5rem 1.5rem;
 
     .ws-card-action-item {
       @include keroseen-card-action-item();
-      color: $ws-brand-color;
+      color: get-color('tomato');
 
       &:hover,
       &:focus {
-        background-color: rgba($ws-brand-color, .2);
+        background-color: rgba(get-color('tomato'), .2);
       }
     }
   }

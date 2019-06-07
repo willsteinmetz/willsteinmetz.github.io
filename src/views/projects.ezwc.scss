@@ -9,6 +9,10 @@
 
 @include keroseen-resets();
 
+:host {
+  display: block;
+}
+
 .ws-grid {
   @include keroseen-grid();
 }
@@ -17,6 +21,11 @@ ws-project-card {
   a:link,
   a:active,
   a:visited {
-    color: $default-white;
+    color: get-color('white');
+  }
+
+  a:hover,
+  a:focus {
+    color: darken(get-color('white'), 10%);
   }
 }
