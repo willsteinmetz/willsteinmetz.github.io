@@ -44,7 +44,7 @@
   </section>
 </template>
 
-<script selector="ws-home">
+<script selector="ws-home" no-shadow>
 class WsHome extends HTMLElement {
   constructor() {
     super();
@@ -53,8 +53,11 @@ class WsHome extends HTMLElement {
 </script>
 
 <style lang="scss">
-@import '../sass/_component-base.scss';
 @import '../../node_modules/keroseen-ui/src/components/_variables.scss';
+
+ws-home {
+  display: block;
+}
 
 .ws-home-content-left,
 .no-mobile {

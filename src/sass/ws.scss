@@ -8,13 +8,16 @@
 
 @import 'colors';
 
+@include generate-colors();
+
 @include keroseen-resets();
 
 body {
-  @include has-keroseen-top-nav();
-  background-color: $page-background;
-  color: $text-color;
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+
+  &.has-top-nav {
+    @include has-keroseen-top-nav();
+  }
 }
 
 @include keroseen-containers();

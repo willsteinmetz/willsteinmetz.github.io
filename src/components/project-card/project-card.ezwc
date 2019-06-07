@@ -14,11 +14,11 @@
 class ProjectCard extends HTMLElement {
   constructor() {
     super();
-    this._projectTitle = this.shadowRoot.querySelector('.ws-card-title');
-    this._projectLink = this.shadowRoot.querySelector('.ws-card-action-item.project-link');
   }
 
   connectedCallback() {
+    this._projectTitle = this.shadowRoot.querySelector('.ws-card-title');
+    this._projectLink = this.shadowRoot.querySelector('.ws-card-action-item.project-link');
     this._projectLink.setAttribute('href', this.projectLink);
     this._projectTitle.innerHTML = this.projectTitle;
   }

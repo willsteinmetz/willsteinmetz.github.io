@@ -10,5 +10,100 @@ $ws-brand-color-darken-3: darken($ws-brand-color, 15%);
 $ws-brand-color-darken-4: darken($ws-brand-color, 20%);
 $ws-brand-color-darken-5: darken($ws-brand-color, 25%);
 $default-white: #fff;
-$text-color: darken($default-white, 5%);
-$page-background: #888;
+
+$pynk: #d94991;
+$cottoncandy: #fdb4f9;
+$twilight: #00335e;
+$chartreuse: #cfd857;
+$carrot: #f78e1b;
+$tomato: #cd2602;
+$maroon: #873e4f;
+$teal: #5ab8a8;
+$cream: #f9f3b5;
+$parrot: #4db81a;
+$grey: (
+  "lighten-5": #fafafa,
+  "lighten-4": whitesmoke,
+  "lighten-3": #eeeeee,
+  "lighten-2": #e0e0e0,
+  "lighten-1": #bdbdbd,
+  "darken-1": #757575,
+  "darken-2": #616161,
+  "darken-3": #424242,
+  "darken-4": #212121,
+  "darken-5": #101010
+);
+
+.grey {
+  background-color: #949494;
+
+  @each $shade, $color in $grey {
+    &.#{$shade} {
+      background-color: $color;
+    }
+  }
+}
+
+.grey-text {
+  color: #949494;
+
+  @each $shade, $color in $grey {
+    &.text-#{$shade} {
+      color: $color;
+    }
+  }
+}
+
+$shades: (
+  "black": black,
+  "white": white,
+  "transparent": transparent
+);
+
+@each $color-name, $color in $shades {
+  .#{$color-name} {
+    background-color: $color;
+  }
+
+  .#{$color-name}-text {
+    color: $color;
+  }
+}
+
+$colors: (
+  "pynk": $pynk,
+  "cottoncandy": $cottoncandy,
+  "twilight": $twilight,
+  "chartreuse": $chartreuse,
+  "carrot": $carrot,
+  "tomato": $tomato,
+  "maroon": $maroon,
+  "teal": $teal,
+  "cream": $cream,
+  "parrot": $parrot
+);
+
+@mixin generate-colors() {
+  @each $color-name, $color in $colors {
+    @each $type in ("base", "text") {
+      $selector: if("base", "#{$color-name}", "#{$color-name}-text");
+      $property: if("base", "background-color", "color");
+      $lighten: if("base", "lighten-", "text-lighten-");
+      $darken: if("base", "darken-", "text-darken-");
+
+      .#{$selector} {
+        $property: $color;
+
+        @for $i from 1 through 5 {
+          &.#{$lighten}#{$i} {
+            #{$property}: lighten($color, (5% * $i));
+          }
+
+          &.#{$darken}#{$i} {
+            #{$property}: darken($color, (5% * $i));
+          }
+        }
+      }
+    }
+  }
+}
