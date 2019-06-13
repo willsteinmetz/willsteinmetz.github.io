@@ -31,13 +31,13 @@
   "devDependencies": {
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
-    "ezwc-loader": "^1.0.0-beta.5",
+    "ezwc-loader": "^1.1.0",
     "keroseen-ui": "^0.2.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "serve": "^11.0.1",
     "style-loader": "^0.23.1",
-    "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.2"
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
   }
 }
