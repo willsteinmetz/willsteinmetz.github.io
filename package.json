@@ -33,7 +33,7 @@
     "eslint": "^5.16.0",
     "ezwc-loader": "^1.1.0",
     "keroseen-ui": "^0.2.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "sass-loader": "^7.1.0",
     "serve": "^11.0.1",
     "style-loader": "^0.23.1",
