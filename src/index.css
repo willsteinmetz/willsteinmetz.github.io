@@ -1,0 +1,25 @@
+:root {
+  color-scheme: dark light;
+  --page-bg-color: light-dark(#efefef, #222222);
+
+  font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--page-bg-color);
+  margin: 0;
+  padding: 0;
+
+  &.light-scheme {
+    color-scheme: light;
+  }
+
+  &.dark-scheme {
+    color-scheme: dark;
+  }
+}

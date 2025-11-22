@@ -1,43 +1,18 @@
 {
-  "name": "willsteinmetz.github.io",
-  "version": "2019.5.0",
-  "description": "Will Steinmetz's website",
-  "main": "index.html",
-  "scripts": {
-    "start": "serve",
-    "build": "webpack",
-    "build:watch": "webpack --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/willsteinmetz/willsteinmetz.github.io.git"
-  },
-  "keywords": [
-    "website",
-    "github"
-  ],
-  "author": "Will Steinmetz",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/willsteinmetz/willsteinmetz.github.io/issues"
-  },
-  "homepage": "https://github.com/willsteinmetz/willsteinmetz.github.io#readme",
+  "name": "website",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@vaadin/router": "^1.2.0",
-    "@webcomponents/webcomponentsjs": "^2.2.10"
+    "lit": "^3.3.1"
   },
   "devDependencies": {
-    "css-loader": "^2.1.1",
-    "eslint": "^5.16.0",
-    "ezwc-loader": "^1.1.0",
-    "keroseen-ui": "^0.2.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
-    "serve": "^11.0.1",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.34.0",
-    "webpack-cli": "^3.3.4"
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4"
   }
 }
